@@ -30,3 +30,48 @@
       padding-block: 9px;
    }
 }
+
+.radial-prog1 {
+   width: 100px;
+   height: 100px;
+   border-radius: 50%;
+
+   &.one {
+      background:
+         radial-gradient(closest-side, white 79%, transparent 80% 100%),
+         conic-gradient(#455561 100%, #f5f5f5 0);
+   }
+
+   &.two {
+      background:
+         radial-gradient(closest-side, white 79%, transparent 80% 100%),
+         conic-gradient(#455561 75%, #f5f5f5 0);
+   }
+
+   &.three {
+      background:
+         radial-gradient(closest-side, white 79%, transparent 80% 100%),
+         conic-gradient(#455561 50%, #f5f5f5 0);
+   }
+
+   &.four {
+      background:
+         radial-gradient(closest-side, white 79%, transparent 80% 100%),
+         conic-gradient(#455561 25%, #f5f5f5 0);
+   }
+
+   &.five {
+      background:
+         radial-gradient(closest-side, white 79%, transparent 80% 100%),
+         conic-gradient(#455561 0%, #f5f5f5 0);
+   }
+
+   span {
+      position: absolute;
+      font-size: 20px;
+      font-weight: 500;
+      left: 50px;
+      top: 50px;
+      transform: translate(-50%, -50%);
+   }
+}
