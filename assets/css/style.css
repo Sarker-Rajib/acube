@@ -526,7 +526,7 @@ body {
   font-weight: 200;
   padding: 2px 20px;
 }
-.offplan .top .location {
+.offplan .top .location1 {
   margin-left: 15px;
   font-size: 14px;
   font-weight: 300;
@@ -597,7 +597,8 @@ body {
   height: 70px;
 }
 .location .wrap .contents .icon {
-  width: 100px;
+  min-width: 100px;
+  max-width: 101px;
   margin-right: 10px;
   justify-content: center;
 }
