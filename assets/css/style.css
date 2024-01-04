@@ -48,6 +48,27 @@ body {
   padding-bottom: 30px;
 }
 
+@media (min-width: 768px) {
+  .register-modal .modal {
+    --bs-modal-width: 850px;
+  }
+}
+
+.modal input {
+  font-size: 14px;
+  padding-block: 9px;
+}
+.modal input::-moz-placeholder {
+  font-size: 14px;
+}
+.modal input::placeholder {
+  font-size: 14px;
+}
+.modal select {
+  font-size: 14px;
+  padding-block: 9px;
+}
+
 /*===// end of base css === */
 /*=== layouts css start === */
 .header {
@@ -139,42 +160,44 @@ body {
   border: 1px solid #fff;
 }
 
-.banner.home {
-  position: relative;
-  min-height: 100vh;
-  background: url(../images/home-banner.png) no-repeat center center/cover;
+.banner {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
-.banner.home .content-wrapper {
+.banner.home {
+  min-height: 100vh;
+  background: url(../images/home-banner.png) no-repeat center center/cover;
+}
+.banner .content-wrapper {
   text-align: center;
   color: #fff;
 }
-.banner.home .content-wrapper .heading,
-.banner.home .content-wrapper .sub {
+.banner .content-wrapper .heading,
+.banner .content-wrapper .sub {
   font-size: 20px;
   text-transform: uppercase;
   font-weight: 200;
 }
-.banner.home .content-wrapper .sub {
+.banner .content-wrapper .sub {
   text-transform: initial;
 }
-.banner.home .content-wrapper .title {
+.banner .content-wrapper .title {
   font-size: 75px;
   font-weight: 400;
   font-family: "Italiana", sans-serif;
 }
 @media (max-width: 767px) {
-  .banner.home .content-wrapper .heading,
-  .banner.home .content-wrapper .sub {
+  .banner .content-wrapper .heading,
+  .banner .content-wrapper .sub {
     font-size: 16px;
   }
-  .banner.home .content-wrapper .title {
+  .banner .content-wrapper .title {
     font-size: 55px;
   }
 }
-.banner.home .bottom-part {
+.banner .bottom-part {
   position: absolute;
   background: rgba(0, 0, 0, 0.7);
   width: 100%;
@@ -182,17 +205,37 @@ body {
   left: 0;
   padding: 20px 0;
 }
-.banner.home .bottom-part .book {
+.banner .bottom-part .book {
   font-size: 12px;
   font-weight: 200;
 }
-.banner.home .bottom-part .book:hover {
+.banner .bottom-part .book:hover {
   border-bottom: 1px solid #fff;
 }
 @media (max-width: 767px) {
-  .banner.home .bottom-part {
+  .banner .bottom-part {
     padding: 10px 0;
   }
+}
+.banner.project {
+  min-height: 100vh;
+  background: url(../images/project/project-b-bg.png) no-repeat center center/cover;
+}
+.banner.project .bottom-part {
+  background: url(../images/project/bbg2.png) center center/cover;
+}
+.banner.project .bottom-part .container {
+  max-width: 1080px;
+}
+.banner.project .bottom-part .line-c {
+  width: 2px;
+  background: rgba(212, 175, 55, 0.2941176471);
+}
+.banner.project .bottom-part p {
+  color: #d4af37;
+  font-size: 14px;
+  font-weight: 300;
+  padding-top: 5px;
 }
 
 .number-slider {

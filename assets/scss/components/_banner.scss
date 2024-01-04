@@ -1,68 +1,96 @@
 .banner {
+
     &.home {
-        position: relative;
         min-height: 100vh;
         background: url(../images/home-banner.png) no-repeat center center/cover;
+    }
 
-        display: flex;
-        align-items: center;
-        justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
 
-        .content-wrapper {
-            text-align: center;
-            color: #fff;
+    .content-wrapper {
+        text-align: center;
+        color: #fff;
+
+        .heading,
+        .sub {
+            font-size: 20px;
+            text-transform: uppercase;
+            font-weight: 200;
+        }
+
+        .sub {
+            text-transform: initial;
+        }
+
+        .title {
+            font-size: 75px;
+            font-weight: 400;
+            font-family: 'Italiana', sans-serif;
+        }
+
+        @media(max-width: 767px) {
 
             .heading,
             .sub {
-                font-size: 20px;
-                text-transform: uppercase;
-                font-weight: 200;
-            }
-
-            .sub {
-                text-transform: initial;
+                font-size: 16px;
             }
 
             .title {
-                font-size: 75px;
-                font-weight: 400;
-                font-family: 'Italiana', sans-serif;
+                font-size: 55px;
             }
+        }
+    }
 
-            @media(max-width: 767px) {
 
-                .heading,
-                .sub {
-                    font-size: 16px;
-                }
+    .bottom-part {
+        position: absolute;
+        background: rgba(0, 0, 0, 0.7);
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        padding: 20px 0;
 
-                .title {
-                    font-size: 55px;
-                }
+        .book {
+            font-size: 12px;
+            font-weight: 200;
+
+            &:hover {
+                border-bottom: 1px solid #fff;
             }
         }
 
+        @media(max-width:767px) {
+            padding: 10px 0;
+        }
+    }
+
+
+    &.project {
+        min-height: 100vh;
+        background: url(../images/project/project-b-bg.png) no-repeat center center/cover;
 
         .bottom-part {
-            position: absolute;
-            background: rgba(0, 0, 0, 0.7);
-            width: 100%;
-            bottom: 0;
-            left: 0;
-            padding: 20px 0;
+            background: url(../images/project/bbg2.png) center center/cover;
 
-            .book {
-                font-size: 12px;
-                font-weight: 200;
-
-                &:hover {
-                    border-bottom: 1px solid #fff;
-                }
+            .container {
+                max-width: 1080px;
             }
 
-            @media(max-width:767px) {
-                padding: 10px 0;
+            .line-c {
+                width: 2px;
+                background: #d4af374b;
+            }
+
+            p {
+                color: #d4af37;
+                font-size: 14px;
+                font-weight: 300;
+                padding-top: 5px;
             }
         }
+
     }
 }

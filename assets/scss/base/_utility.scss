@@ -4,3 +4,29 @@
    font-family: 'Italiana', sans-serif;
    padding-bottom: 30px;
 }
+
+
+.register-modal {
+   @media(min-width:768px) {
+
+      .modal {
+         --bs-modal-width: 850px;
+      }
+   }
+}
+
+.modal {
+   input {
+      font-size: 14px;
+      padding-block: 9px;
+
+      &::placeholder {
+         font-size: 14px;
+      }
+   }
+
+   select {
+      font-size: 14px;
+      padding-block: 9px;
+   }
+}
