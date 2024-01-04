@@ -1,0 +1,32 @@
+.footer {
+    background: #f9f9f9;
+    padding: 65px 0 35px;
+
+    .topper {
+        padding-bottom: 55px;
+
+        h3 {
+            font-weight: 300;
+            font-size: 20px;
+            padding-bottom: 25px;
+        }
+
+        a,
+        p {
+            font-weight: 300;
+            color: #555555;
+            font-size: 16px;
+        }
+
+        a:hover {
+            color: #308ccd;
+            font-weight: 500;
+        }
+    }
+
+    .email-sub {
+        &::placeholder {
+            color: #ffffff7e;
+        }
+    }
+}

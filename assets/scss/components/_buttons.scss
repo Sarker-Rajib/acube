@@ -1,0 +1,12 @@
+.btn-expo {
+    background: #000000b6;
+    color: #fff;
+    padding: 10px 15px;
+    font-weight: 200;
+    font-size: 12px;
+
+    &:hover {
+        background: #000;
+        border: 1px solid #fff;
+    }
+}
