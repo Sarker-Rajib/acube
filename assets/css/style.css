@@ -258,6 +258,10 @@ body {
   min-height: 200px;
   background: url(../images/project/project-b-bg.png) no-repeat center center/cover;
 }
+.banner.career {
+  min-height: 100vh;
+  background: url(../images/oppo.png) no-repeat center center/cover;
+}
 .banner.project {
   min-height: 100vh;
   background: url(../images/project/project-b-bg.png) no-repeat center center/cover;
@@ -815,4 +819,58 @@ body {
   .our-team h2 {
     padding: 55px;
   }
+}
+
+.career-posts {
+  padding: 100px 0;
+}
+.career-posts .accordion .accordion-item {
+  border-radius: 0;
+  border: none;
+  border-bottom: 1px solid #efefef;
+}
+.career-posts .accordion .accordion-item .accordion-header .accordion-button {
+  border-radius: 0;
+  font-size: 18px;
+  font-weight: 300;
+  color: #5f5f5f;
+}
+.career-posts .accordion .accordion-item .accordion-header .accordion-button:not(.collapsed) {
+  background: rgba(187, 187, 187, 0.1215686275);
+}
+.career-posts .accordion .accordion-item .accordion-header .accordion-button:not(.collapsed)::after {
+  transition: none;
+  width: auto;
+  height: auto;
+  content: "X";
+  background-image: none;
+}
+.career-posts .accordion .accordion-item .accordion-header .accordion-button.collapsed::after {
+  transition: none;
+  width: auto;
+  height: auto;
+  content: "Apply Now ->";
+  background-image: none;
+  white-space: nowrap;
+  font-size: 18px;
+  right: 0;
+}
+.career-posts .accordion .accordion-item .accordion-body p,
+.career-posts .accordion .accordion-item .accordion-body li {
+  font-size: 16px;
+  font-weight: 300;
+  color: #5f5f5f;
+}
+.career-posts .accordion .accordion-item .accordion-body label {
+  font-size: 14px;
+  font-weight: 200;
+}
+.career-posts .accordion .accordion-item .accordion-body h4 {
+  padding-bottom: 15px;
+}
+.career-posts .accordion .accordion-item .accordion-body input,
+.career-posts .accordion .accordion-item .accordion-body select {
+  width: 100%;
+  border: 1px solid #e1e1e1;
+  padding: 6px 10px;
 }/*# sourceMappingURL=style.css.map */
