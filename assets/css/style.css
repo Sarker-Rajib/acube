@@ -195,10 +195,6 @@ body {
   justify-content: center;
   position: relative;
 }
-.banner.home {
-  min-height: 100vh;
-  background: url(../images/home-banner.png) no-repeat center center/cover;
-}
 .banner .content-wrapper {
   text-align: center;
   color: #fff;
@@ -245,6 +241,22 @@ body {
   .banner .bottom-part {
     padding: 10px 0;
   }
+}
+.banner.home {
+  min-height: 100vh;
+  background: url(../images/home-banner.png) no-repeat center center/cover;
+}
+.banner.listing {
+  min-height: 100vh;
+  background: url(../images/listing/list-banner.png) no-repeat center center/cover;
+}
+.banner.agent {
+  min-height: 100vh;
+  background: url(../images/bocome-agent.png) no-repeat center center/cover;
+}
+.banner.faq {
+  min-height: 200px;
+  background: url(../images/project/project-b-bg.png) no-repeat center center/cover;
 }
 .banner.project {
   min-height: 100vh;
@@ -632,4 +644,95 @@ body {
   .construction {
     padding: 40px 0 50px;
   }
+}
+
+.projects .p-card .more-a {
+  visibility: hidden;
+}
+.projects .p-card:hover {
+  background: #f6f5f5;
+}
+.projects .p-card:hover .more-a {
+  visibility: visible;
+}
+
+.register-interest {
+  padding: 100px 0 120px;
+}
+@media (max-width: 767px) {
+  .register-interest {
+    padding: 40px 0 60px;
+  }
+}
+.register-interest .sec-header {
+  position: relative;
+  overflow: hidden;
+}
+.register-interest .sec-header p {
+  font-size: 26px;
+  font-weight: 300;
+  text-transform: uppercase;
+  background: #fff;
+  position: relative;
+  z-index: 5;
+  display: inline-block;
+  padding-right: 10px;
+}
+.register-interest .sec-header::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 2px;
+  background: #000;
+  left: 0;
+  top: 50%;
+  z-index: 1;
+}
+.register-interest h2 {
+  font-family: "Italiana", sans-serif;
+  font-size: 65px;
+}
+
+.agent-form {
+  padding: 100px 0 120px;
+}
+@media (max-width: 767px) {
+  .agent-form {
+    padding: 40px 0 60px;
+  }
+}
+.agent-form label {
+  font-size: 14px;
+  font-weight: 200;
+}
+.agent-form h4 {
+  padding-bottom: 15px;
+}
+.agent-form input,
+.agent-form select {
+  width: 100%;
+  border: 1px solid #e1e1e1;
+  padding: 6px 10px;
+}
+
+.faqs {
+  padding: 50px 0 100px;
+}
+.faqs .accordion .accordion-item {
+  border-radius: 0;
+  border: none;
+  border-bottom: 1px solid #efefef;
+}
+.faqs .accordion .accordion-item .accordion-header .accordion-button {
+  border-radius: 0;
+  font-size: 20px;
+  font-weight: 300;
+}
+.faqs .accordion .accordion-item .accordion-header .accordion-button:not(.collapsed) {
+  background: rgba(187, 187, 187, 0.1215686275);
+}
+.faqs .accordion .accordion-item .accordion-body p {
+  font-size: 16px;
+  font-weight: 300;
+  color: #565656;
 }/*# sourceMappingURL=style.css.map */

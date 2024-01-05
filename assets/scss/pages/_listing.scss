@@ -1,0 +1,15 @@
+.projects {
+    .p-card {
+        .more-a {
+            visibility: hidden;
+        }
+
+        &:hover {
+            background: #f6f5f5;
+
+            .more-a {
+                visibility: visible;
+            }
+        }
+    }
+}

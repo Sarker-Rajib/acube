@@ -1,10 +1,4 @@
 .banner {
-
-    &.home {
-        min-height: 100vh;
-        background: url(../images/home-banner.png) no-repeat center center/cover;
-    }
-
     display: flex;
     align-items: center;
     justify-content: center;
@@ -67,6 +61,25 @@
         }
     }
 
+    &.home {
+        min-height: 100vh;
+        background: url(../images/home-banner.png) no-repeat center center/cover;
+    }
+
+    &.listing {
+        min-height: 100vh;
+        background: url(../images/listing/list-banner.png) no-repeat center center/cover;
+    }
+
+    &.agent {
+        min-height: 100vh;
+        background: url(../images/bocome-agent.png) no-repeat center center/cover;
+    }
+
+    &.faq {
+        min-height: 200px;
+        background: url(../images/project/project-b-bg.png) no-repeat center center/cover;
+    }
 
     &.project {
         min-height: 100vh;
