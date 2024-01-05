@@ -310,3 +310,90 @@
 
     }
 }
+
+.all-news {
+    .first-section {
+        padding: 65px 0 50px;
+        background: #f9f9f9;
+
+        .news-card {
+
+            .text {
+                padding-top: 20px;
+
+                .mini-title {
+                    color: #3d6195;
+                    font-size: 14px;
+                    font-weight: 300;
+                }
+
+                .head-wrap {
+                    position: relative;
+                    padding: 20px 10px 20px 0;
+                    background: #f9f9f9;
+
+                    @media(min-width: 768px) {
+                        margin-right: -100px;
+                    }
+
+                    .heading {
+                        font-weight: 300;
+                        font-size: 25px;
+
+                    }
+
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        left: 0;
+                        bottom: 0;
+                        width: 50px;
+                        height: 3px;
+                        background: #0000004f;
+                    }
+                }
+
+                .para-r {
+                    padding-top: 20px;
+
+                    .para {
+                        font-weight: 300;
+                        font-size: 14px;
+                        color: #606060;
+                    }
+                }
+            }
+
+            a {
+                margin-top: 20px;
+                color: #b29542;
+                font-weight: 300;
+                font-size: 12px;
+                display: inline-block;
+                transition: 0.1s;
+
+                img {
+                    transition: 0.3s;
+                }
+
+                &:hover {
+                    font-weight: 400;
+
+                    img {
+                        transform: translateX(10px);
+                    }
+                }
+            }
+        }
+
+        &.wide {
+            .news-card {
+                .head-wrap {
+                    @media(min-width: 768px) {
+                        margin-right: -180px;
+                    }
+                }
+            }
+        }
+    }
+}
