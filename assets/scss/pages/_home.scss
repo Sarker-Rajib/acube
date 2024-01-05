@@ -58,58 +58,6 @@
     }
 }
 
-.development {
-    .b-wrapper {
-        padding: 100px 0 120px;
-        background: url(../images/shadow.png) no-repeat top right;
-
-        .mini-heading {
-            font-weight: 300;
-            font-size: 26px;
-            text-transform: uppercase;
-            padding-bottom: 20px;
-        }
-
-        .title {
-            font-size: 65px;
-            font-weight: 400;
-            font-family: 'Italiana', sans-serif;
-            padding-bottom: 40px;
-        }
-
-        .para {
-            font-size: 18px;
-        }
-
-        a {
-            font-size: 16px;
-            color: #000;
-
-            &:hover {
-                img {
-                    transform: translatex(5px);
-                }
-            }
-        }
-
-        @media(max-width: 767px) {
-            padding: 60px 0 70px;
-
-            .mini-heading {
-                font-size: 16px;
-            }
-
-            .title {
-                font-size: 45px;
-            }
-
-            .para {
-                font-size: 16px;
-            }
-        }
-    }
-}
-
 .projects {
     padding: 70px 0;
 
