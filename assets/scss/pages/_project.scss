@@ -67,6 +67,20 @@
     .wrap {
         margin-top: -180px;
     }
+
+    .w-card {
+        overflow: hidden;
+
+        .bigone {
+            transition: all 0.3s;
+        }
+
+        &:hover {
+            .bigone {
+                transform: scale(1.06);
+            }
+        }
+    }
 }
 
 .Gallery {
@@ -121,6 +135,18 @@
 
 .VitrualTour {
     padding: 50px 0 80px;
+
+    .vt-card {
+        .i360im {
+            transition: all 0.3s;
+            width: auto;
+
+            &:hover {
+                z-index: 99;
+                width: 90px;
+            }
+        }
+    }
 
     p {
         padding-top: 20px;

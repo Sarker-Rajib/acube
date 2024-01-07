@@ -10,3 +10,11 @@
         border: 1px solid #fff;
     }
 }
+
+.offplan-btn {
+    transition: all 0.2s;
+
+    &:hover {
+        transform: scale(1.05);
+    }
+}

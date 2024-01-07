@@ -100,6 +100,46 @@ body {
 
 /*===// end of base css === */
 /*=== layouts css start === */
+.side-nav {
+  position: fixed;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 999;
+  background: #ffffff;
+  border-radius: 10px;
+}
+.side-nav .wrap {
+  padding: 20px;
+}
+.side-nav .wrap .ttx {
+  right: calc(100% + 10px);
+  top: 10px;
+  background: #000;
+  color: #fff;
+  padding: 5px 20px;
+  border-radius: 5px;
+}
+.side-nav .wrap .ttx::after {
+  content: "";
+  position: absolute;
+  right: -6px;
+  top: 50%;
+  transform: translateY(-50%) rotate(45deg);
+  height: 15px;
+  width: 15px;
+  background: #000;
+}
+.side-nav li:not(:last-child) {
+  padding-bottom: 20px;
+}
+.side-nav img {
+  transition: all 0.1s;
+}
+.side-nav img:hover {
+  transform: scale(1.05);
+}
+
 .header {
   position: fixed;
   top: 0;
@@ -189,6 +229,13 @@ body {
   border: 1px solid #fff;
 }
 
+.offplan-btn {
+  transition: all 0.2s;
+}
+.offplan-btn:hover {
+  transform: scale(1.05);
+}
+
 .banner {
   display: flex;
   align-items: center;
@@ -235,7 +282,7 @@ body {
   font-weight: 200;
 }
 .banner .bottom-part .book:hover {
-  border-bottom: 1px solid #fff;
+  border: 1px solid #fff;
 }
 @media (max-width: 767px) {
   .banner .bottom-part {
@@ -267,6 +314,11 @@ body {
   background: url(../images/project/project-b-bg.png) no-repeat center center/cover;
 }
 .banner.project .bottom-part {
+  position: fixed;
+  z-index: 991;
+  bottom: 0;
+  left: 0;
+  width: 100%;
   background: url(../images/project/bbg2.png) center center/cover;
 }
 .banner.project .bottom-part .container {
@@ -355,14 +407,23 @@ body {
   }
 }
 .view-cate .vr {
-  margin: 5px 10px;
-  width: 2px;
-  background: #000;
+  margin: 5px 35px;
+  width: 1px;
+  background: rgba(0, 0, 0, 0.55);
   opacity: 0.7;
 }
 
 .projects {
   padding: 70px 0;
+}
+.projects .im-wrap {
+  overflow: hidden;
+}
+.projects .im-wrap img {
+  transition: all 0.3s;
+}
+.projects .im-wrap:hover img {
+  transform: scale(1.05);
 }
 .projects .text {
   text-align: center;
@@ -481,6 +542,32 @@ body {
 .featured-in {
   padding: 80px 0;
 }
+.featured-in .container {
+  max-width: 1100px;
+}
+.featured-in .container .swiper-wrapper {
+  align-items: center;
+}
+.featured-in .container .swiper-wrapper .swiper-slide {
+  text-align: center;
+  padding: 0 20px;
+  position: relative;
+  min-height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.featured-in .container .swiper-wrapper .swiper-slide::after {
+  position: absolute;
+  content: "";
+  left: 0px;
+  top: 30px;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 40px;
+  background: rgba(0, 0, 0, 0.25);
+  z-index: 99;
+}
 
 .offplan {
   padding: 80px 0;
@@ -538,6 +625,15 @@ body {
 .amenities .wrap {
   margin-top: -180px;
 }
+.amenities .w-card {
+  overflow: hidden;
+}
+.amenities .w-card .bigone {
+  transition: all 0.3s;
+}
+.amenities .w-card:hover .bigone {
+  transform: scale(1.06);
+}
 
 .Gallery {
   padding: 55px 0;
@@ -583,6 +679,14 @@ body {
 
 .VitrualTour {
   padding: 50px 0 80px;
+}
+.VitrualTour .vt-card .i360im {
+  transition: all 0.3s;
+  width: auto;
+}
+.VitrualTour .vt-card .i360im:hover {
+  z-index: 99;
+  width: 90px;
 }
 .VitrualTour p {
   padding-top: 20px;
@@ -706,15 +810,16 @@ body {
 }
 .development .b-wrapper .mh-wrap {
   position: relative;
+  overflow: hidden;
 }
 .development .b-wrapper .mh-wrap::after {
   position: absolute;
   content: "";
-  right: 0;
+  left: 220px;
   top: 50%;
   transform: translateY(-50%);
   height: 2px;
-  width: 100%;
+  width: 70%;
   background: #000;
 }
 .development .b-wrapper .mh-wrap .mini-heading {
@@ -722,7 +827,6 @@ body {
   font-size: 26px;
   text-transform: uppercase;
   display: inline-block;
-  background: #fff;
   position: relative;
   z-index: 8;
   padding-right: 10px;

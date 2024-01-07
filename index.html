@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>ACUBE</title>
-  <link rel='shortcut icon' href='assets/images/brand-logo.png' type='image/x-icon'>
+  <link rel='shortcut icon' href='assets/images/SVGs/favicon.ico' type='image/x-icon'>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/vendor/Swiper-slider/css/swiper-bundle.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -122,6 +122,22 @@
     </div>
   </header>
   <!-- all codes for ===***header***=== ended -->
+  <div class="side-nav">
+    <div class="position-relative wrap">
+      <ul class="p-0">
+        <li><a href="#">
+            <img width="20" src="assets/images/snv/mail.png" alt="a">
+          </a></li>
+        <li><a href="#">
+            <img width="20" src="assets/images/snv/wapp.png" alt="a">
+          </a></li>
+        <li><a href="#">
+            <img width="20" src="assets/images/snv/call.png" alt="a">
+          </a></li>
+      </ul>
+      <p class="position-absolute ttx">Inquiry</p>
+    </div>
+  </div>
 
   <main>
     <!-- all codes for ===***banner***=== starts from here -->
@@ -150,16 +166,17 @@
           <div class="col-md-6">
             <p class="mini-heading">Experience the luxury living</p>
             <h2 class="title">Adhara Star</h2>
-            <div class="d-flex align-items-center py-3">
+            <div class="d-flex align-items-center pt-4 py-3">
               <div>
-                <a href="#" class="d-inline-block text-center bg-black text-white px-3 py-2"
-                  style="font-size: 12px;">Register your interest</a>
+                <a href="#" class="d-inline-block text-center bg-black text-white py-3"
+                  style="font-size: 12px; padding-inline: 35px;">Register your interest</a>
               </div>
               <div>
-                <a href="#" class="d-inline-block text-center text-black px-3 py-2" style="font-size: 12px;">
+                <a href="#" class="d-inline-block text-center text-black ms-xl-3 px-3 py-2" style="font-size: 14px;">
                   <img width="30" src="assets/images/360-degrees.png" alt="360">
-                  View Virtual
-                  Tours</a>
+                  <span class="ms-2">View Virtual
+                    Tours</span>
+                </a>
               </div>
             </div>
             <div class="d-md-flex pt-3">
@@ -261,7 +278,7 @@
         <div class="row g-xl-5 g-4">
           <div class="col-md-6 col-lg-4">
             <a href="#">
-              <div class="text-center">
+              <div class="text-center im-wrap">
                 <img src="assets/images/home/room.png" alt="im" class="img-fluid">
               </div>
             </a>
@@ -273,7 +290,7 @@
           </div>
           <div class="col-md-6 col-lg-4">
             <a href="#">
-              <div class="text-center">
+              <div class="text-center im-wrap">
                 <img src="assets/images/home/shep.png" alt="im" class="img-fluid">
               </div>
             </a>
@@ -285,7 +302,7 @@
           </div>
           <div class="col-md-6 col-lg-4">
             <a href="#">
-              <div class="text-center">
+              <div class="text-center im-wrap">
                 <img src="assets/images/home/golf.png" alt="im" class="img-fluid">
               </div>
             </a>
@@ -430,26 +447,25 @@
     <section class="featured-in">
       <div class="container">
         <h3 class="section-header pb-4 text-center">Featured In</h3>
-        <div class="d-flex flex-wrap justify-content-center align-items-center">
-          <div class="my-3">
-            <img class="img-fluid" src="assets/images/featured/1.png" alt="a">
+        <div class="swiper featureSlider number-slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img class="img-fluid" src="assets/images/featured/1.png" alt="a">
+            </div>
+            <div class="swiper-slide">
+              <img class="img-fluid" src="assets/images/featured/2.png" alt="a">
+            </div>
+            <div class="swiper-slide">
+              <img class="img-fluid" src="assets/images/featured/3.png" alt="a">
+            </div>
+            <div class="swiper-slide">
+              <img class="img-fluid" src="assets/images/featured/4.png" alt="a">
+            </div>
+            <div class="swiper-slide">
+              <img class="img-fluid" src="assets/images/featured/5.png" alt="a">
+            </div>
           </div>
-          <div class="vr my-4 mx-2 mx-xl-3"></div>
-          <div class="my-3">
-            <img class="img-fluid" src="assets/images/featured/2.png" alt="a">
-          </div>
-          <div class="vr my-4 mx-2 mx-xl-3"></div>
-          <div class="my-3">
-            <img class="img-fluid" src="assets/images/featured/3.png" alt="a">
-          </div>
-          <div class="vr my-4 mx-2 mx-xl-3"></div>
-          <div class="my-3">
-            <img class="img-fluid" src="assets/images/featured/4.png" alt="a">
-          </div>
-          <div class="vr my-4 mx-2 mx-xl-3"></div>
-          <div class="my-3">
-            <img class="img-fluid" src="assets/images/featured/5.png" alt="a">
-          </div>
+          <div class="swiper-pagination"></div>
         </div>
       </div>
     </section>

@@ -1,3 +1,50 @@
+.side-nav {
+    position: fixed;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 999;
+    background: #ffffff;
+    border-radius: 10px;
+
+    .wrap {
+        padding: 20px;
+
+        .ttx {
+            right: calc(100% + 10px);
+            top: 10px;
+            background: #000;
+            color: #fff;
+            padding: 5px 20px;
+            border-radius: 5px;
+
+            &::after {
+                content: '';
+                position: absolute;
+                right: -6px;
+                top: 50%;
+                transform: translateY(-50%) rotate(45deg);
+                height: 15px;
+                width: 15px;
+                background: #000;
+            }
+        }
+    }
+
+    li:not(:last-child) {
+        padding-bottom: 20px;
+    }
+
+    img {
+        transition: all 0.1s;
+
+        &:hover {
+            transform: scale(1.05);
+        }
+    }
+
+}
+
 .header {
     position: fixed;
     top: 0;

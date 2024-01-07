@@ -52,7 +52,7 @@
             font-weight: 200;
 
             &:hover {
-                border-bottom: 1px solid #fff;
+                border: 1px solid #fff;
             }
         }
 
@@ -91,6 +91,11 @@
         background: url(../images/project/project-b-bg.png) no-repeat center center/cover;
 
         .bottom-part {
+            position: fixed;
+            z-index: 991;
+            bottom: 0;
+            left: 0;
+            width: 100%;
             background: url(../images/project/bbg2.png) center center/cover;
 
             .container {
