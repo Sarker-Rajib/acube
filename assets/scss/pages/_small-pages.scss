@@ -81,6 +81,14 @@
                     &:not(.collapsed) {
                         background: #bbbbbb1f;
                     }
+
+                    @media(max-width:767px) {
+                        font-size: 17px;
+                    }
+
+                    &:focus {
+                        box-shadow: none;
+                    }
                 }
             }
 
@@ -89,7 +97,12 @@
                     font-size: 16px;
                     font-weight: 300;
                     color: #565656;
+
+                    @media(max-width:767px) {
+                        font-size: 15px;
+                    }
                 }
+
             }
 
         }
@@ -151,8 +164,8 @@
             }
         }
 
-        @media(max-width: 767px) {
-            padding: 60px 0 70px;
+        @media(max-width: 991px) {
+            padding: 40px 0;
 
             .mini-heading {
                 font-size: 16px;
@@ -171,13 +184,18 @@
     &.about-us {
         margin-top: 50px;
         margin-bottom: 50px;
+
+        @media(max-width:991px) {
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
     }
 
     &.ceo-message {
         margin-top: 80px;
 
-        @media(max-width:767) {
-            margin-top: 40px;
+        @media(max-width:991px) {
+            margin-top: 0px;
         }
 
         .b-wrapper {
@@ -226,14 +244,9 @@
         }
     }
 
-
     h2 {
         font-family: 'Italiana', sans-serif;
         font-size: 65px;
-
-        @media(max-width:991px) {
-            padding: 55px;
-        }
     }
 }
 
@@ -275,7 +288,19 @@
                             white-space: nowrap;
                             font-size: 18px;
                             right: 0;
+
+                            @media(max-width: 767px) {
+                                font-size: 15px;
+                            }
                         }
+                    }
+
+                    &:focus {
+                        box-shadow: none;
+                    }
+
+                    @media(max-width: 767px) {
+                        font-size: 16px;
                     }
                 }
             }
@@ -393,6 +418,12 @@
                         margin-right: -180px;
                     }
                 }
+            }
+        }
+
+        @media(max-width:767px) {
+            .nmdesia {
+                width: 100%;
             }
         }
     }

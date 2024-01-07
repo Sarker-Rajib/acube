@@ -389,6 +389,9 @@ body {
   font-size: 18px;
   font-weight: 300;
 }
+.view-cate .int-b {
+  padding: 16px 35px;
+}
 @media (max-width: 767px) {
   .view-cate {
     margin-bottom: 20px;
@@ -400,10 +403,13 @@ body {
     font-size: 60px;
   }
   .view-cate .txt .number {
-    font-size: 35px;
+    font-size: 25px;
   }
   .view-cate .txt .text {
-    font-size: 15px;
+    font-size: 14px;
+  }
+  .view-cate .int-b {
+    padding: 10px 15px;
   }
 }
 .view-cate .vr {
@@ -411,6 +417,11 @@ body {
   width: 1px;
   background: rgba(0, 0, 0, 0.55);
   opacity: 0.7;
+}
+@media (max-width: 767px) {
+  .view-cate .vr {
+    margin: 5px 10px;
+  }
 }
 
 .projects {
@@ -475,7 +486,11 @@ body {
 }
 .latest-news .news-section .news-card .text {
   padding: 35px 20px 20px;
-  min-height: 350px;
+}
+@media (min-width: 765px) {
+  .latest-news .news-section .news-card .text {
+    min-height: 350px;
+  }
 }
 @media (min-width: 1200px) {
   .latest-news .news-section .news-card .text {
@@ -798,10 +813,23 @@ body {
 .faqs .accordion .accordion-item .accordion-header .accordion-button:not(.collapsed) {
   background: rgba(187, 187, 187, 0.1215686275);
 }
+@media (max-width: 767px) {
+  .faqs .accordion .accordion-item .accordion-header .accordion-button {
+    font-size: 17px;
+  }
+}
+.faqs .accordion .accordion-item .accordion-header .accordion-button:focus {
+  box-shadow: none;
+}
 .faqs .accordion .accordion-item .accordion-body p {
   font-size: 16px;
   font-weight: 300;
   color: #565656;
+}
+@media (max-width: 767px) {
+  .faqs .accordion .accordion-item .accordion-body p {
+    font-size: 15px;
+  }
 }
 
 .development .b-wrapper {
@@ -848,9 +876,9 @@ body {
 .development .b-wrapper a:hover img {
   transform: translatex(5px);
 }
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   .development .b-wrapper {
-    padding: 60px 0 70px;
+    padding: 40px 0;
   }
   .development .b-wrapper .mini-heading {
     font-size: 16px;
@@ -866,12 +894,18 @@ body {
   margin-top: 50px;
   margin-bottom: 50px;
 }
+@media (max-width: 991px) {
+  .development.about-us {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+}
 .development.ceo-message {
   margin-top: 80px;
 }
-@media (max-width: 767) {
+@media (max-width: 991px) {
   .development.ceo-message {
-    margin-top: 40px;
+    margin-top: 0px;
   }
 }
 .development.ceo-message .b-wrapper {
@@ -919,11 +953,6 @@ body {
   font-family: "Italiana", sans-serif;
   font-size: 65px;
 }
-@media (max-width: 991px) {
-  .our-team h2 {
-    padding: 55px;
-  }
-}
 
 .career-posts {
   padding: 100px 0;
@@ -958,6 +987,19 @@ body {
   white-space: nowrap;
   font-size: 18px;
   right: 0;
+}
+@media (max-width: 767px) {
+  .career-posts .accordion .accordion-item .accordion-header .accordion-button.collapsed::after {
+    font-size: 15px;
+  }
+}
+.career-posts .accordion .accordion-item .accordion-header .accordion-button:focus {
+  box-shadow: none;
+}
+@media (max-width: 767px) {
+  .career-posts .accordion .accordion-item .accordion-header .accordion-button {
+    font-size: 16px;
+  }
 }
 .career-posts .accordion .accordion-item .accordion-body p,
 .career-posts .accordion .accordion-item .accordion-body li {
@@ -1042,5 +1084,10 @@ body {
 @media (min-width: 768px) {
   .all-news .first-section.wide .news-card .head-wrap {
     margin-right: -180px;
+  }
+}
+@media (max-width: 767px) {
+  .all-news .first-section .nmdesia {
+    width: 100%;
   }
 }/*# sourceMappingURL=style.css.map */
