@@ -166,6 +166,11 @@
         font-family: 'Italiana', sans-serif;
         text-align: center;
     }
+
+
+    .modal {
+        --bs-modal-width: 100%;
+    }
 }
 
 .construction {

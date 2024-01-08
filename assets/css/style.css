@@ -768,6 +768,9 @@ body {
   font-family: "Italiana", sans-serif;
   text-align: center;
 }
+.VitrualTour .modal {
+  --bs-modal-width: 100%;
+}
 
 .construction {
   padding: 50px 0 80px;
