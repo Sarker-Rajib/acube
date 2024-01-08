@@ -23,15 +23,14 @@
     <div class="container csm">
       <nav class="navbar navbar-expand-xl">
         <a class="navbar-brand d-xl-none" href="index.html">
-          <img src="assets/images/project/gold-icon.png" alt="logo" class="img-fluid">
+          <img src="assets/images/SVGs/logo_WHITE.svg" alt="logo" class="img-fluid">
         </a>
 
-        <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
-          aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <button id="trigger" class="navbar-toggler bg-light" type="button">
           <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse" id="mainNav">
+        <div class="navbar-collapse hide collapse-res-nav" id="mainNav">
           <ul
             class="navbar-nav position-relative align-items-xl-center flex-grow-1 mb-2 mb-lg-0 justify-content-between d-lg-flex">
             <li>
@@ -83,7 +82,7 @@
 
             <li class="lg-logo d-none d-xl-inline-block">
               <a href="index.html">
-                <img src="assets/images/project/gold-icon.png" alt="logo" class="img-fluid">
+                <img src="assets/images/SVGs/logo_WHITE.svg" alt="logo" class="img-fluid">
               </a>
             </li>
 
@@ -117,6 +116,7 @@
               </ul>
             </li>
           </ul>
+          <span id="closer" class="text-white position-absolute top-0 end-0 px-3 py-2 d-xl-none">X</span>
         </div>
       </nav>
     </div>
@@ -132,7 +132,7 @@
     <!-- ALL THE LATEST AT ACUBE -->
     <section class="all-news">
       <div class="container p-0">
-        <div class="first-section">
+        <div class="first-section ">
           <div class="container csm">
             <div class="top">
               <h3 class="pb-4 text-center" style="font-weight: 400; font-size: 28px;">ALL THE LATEST AT ACUBE</h3>
@@ -152,7 +152,7 @@
               <div class="col-lg-6">
                 <div class="news-card">
                   <div class="row g-3">
-                    <div class="col-sm-6">
+                    <div class="col-sm-6 order-2 order-md-1">
                       <div class="text">
                         <p class="mini-title">Blogs</p>
                         <div class="head-wrap">
@@ -170,7 +170,7 @@
                         <a href="#">Read More <img src="assets/images/a-y.png" alt="s"></a>
                       </div>
                     </div>
-                    <div class="col-sm-6">
+                    <div class="col-sm-6 order-1 order-md-2">
                       <div class="image text-center">
                         <img src="assets/images/media/n1.png" alt="ima" class="img-fluid nmdesia">
                       </div>
@@ -181,7 +181,7 @@
               <div class="col-lg-6">
                 <div class="news-card">
                   <div class="row">
-                    <div class="col-sm-6">
+                    <div class="col-sm-6 order-2 order-md-1">
                       <div class="text">
                         <p class="mini-title">Blogs</p>
                         <div class="head-wrap">
@@ -197,7 +197,7 @@
                         <a href="#">Read More <img src="assets/images/a-y.png" alt="s"></a>
                       </div>
                     </div>
-                    <div class="col-sm-6">
+                    <div class="col-sm-6 order-1 order-md-2">
                       <div class="image text-center">
                         <img src="assets/images/media/n2.png" alt="ima" class="img-fluid nmdesia">
                       </div>
@@ -209,11 +209,11 @@
           </div>
         </div>
 
-        <div class="first-section bg-transparent wide">
+        <div class=" first-section bg-transparent wide">
           <div class="container csm">
             <div class="news-card">
               <div class="row g-3 gx-xl-5">
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg-4 col-md-6 order-2 order-md-1">
                   <div class="text">
                     <p class="mini-title">News | Khaleej Times</p>
                     <div class="head-wrap" style="background: #fff;">
@@ -233,7 +233,7 @@
                     <a href="#">Read More <img src="assets/images/a-y.png" alt="s"></a>
                   </div>
                 </div>
-                <div class="col-lg-8 col-md-6">
+                <div class="col-lg-8 col-md-6 order-1 order-md-2">
                   <div class="image text-center">
                     <img src="assets/images/media/n3.png" alt="ima" class="img-fluid nmdesia">
                   </div>
@@ -243,13 +243,13 @@
           </div>
         </div>
 
-        <div class="first-section">
+        <div class="first-section ">
           <div class="container csm">
             <div class="row g-3 gx-xl-5">
               <div class="col-lg-6">
                 <div class="news-card">
                   <div class="row g-3">
-                    <div class="col-sm-6">
+                    <div class="col-sm-6 order-2 order-md-1">
                       <div class="text">
                         <p class="mini-title">News | Gulf News Today</p>
                         <div class="head-wrap">
@@ -267,7 +267,7 @@
                         <a href="#">Read More <img src="assets/images/a-y.png" alt="s"></a>
                       </div>
                     </div>
-                    <div class="col-sm-6">
+                    <div class="col-sm-6 order-1 order-md-2">
                       <div class="image text-center">
                         <img src="assets/images/media/n4.png" alt="ima" class="img-fluid nmdesia">
                       </div>
@@ -278,7 +278,7 @@
               <div class="col-lg-6">
                 <div class="news-card">
                   <div class="row">
-                    <div class="col-sm-6">
+                    <div class="col-sm-6 order-2 order-md-1">
                       <div class="text">
                         <p class="mini-title">News | TradeArabia</p>
                         <div class="head-wrap">
@@ -295,7 +295,7 @@
                         <a href="#">Read More <img src="assets/images/a-y.png" alt="s"></a>
                       </div>
                     </div>
-                    <div class="col-sm-6">
+                    <div class="col-sm-6 order-1 order-md-2">
                       <div class="image text-center">
                         <img src="assets/images/media/n5.png" alt="ima" class="img-fluid nmdesia">
                       </div>
@@ -307,11 +307,11 @@
           </div>
         </div>
 
-        <div class="first-section bg-transparent wide">
+        <div class=" first-section bg-transparent wide">
           <div class="container csm">
             <div class="news-card">
               <div class="row g-3 gx-xl-5">
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg-4 col-md-6 order-2 order-md-1">
                   <div class="text">
                     <p class="mini-title">News | Khaleej Times</p>
                     <div class="head-wrap" style="background: #fff;">
@@ -329,7 +329,7 @@
                     <a href="#">Read More <img src="assets/images/a-y.png" alt="s"></a>
                   </div>
                 </div>
-                <div class="col-lg-8 col-md-6">
+                <div class="col-lg-8 col-md-6 order-1 order-md-2">
                   <div class="image text-center">
                     <img src="assets/images/media/n6.png" alt="ima" class="img-fluid nmdesia">
                   </div>
@@ -345,7 +345,7 @@
               <div class="col-lg-6">
                 <div class="news-card">
                   <div class="row g-3">
-                    <div class="col-sm-6">
+                    <div class="col-sm-6 order-2 order-md-1">
                       <div class="text">
                         <p class="mini-title">Blogs</p>
                         <div class="head-wrap">
@@ -364,7 +364,7 @@
                         <a href="#">Read More <img src="assets/images/a-y.png" alt="s"></a>
                       </div>
                     </div>
-                    <div class="col-sm-6">
+                    <div class="col-sm-6 order-1 order-md-2">
                       <div class="image text-center">
                         <img src="assets/images/media/n7.png" alt="ima" class="img-fluid nmdesia">
                       </div>
@@ -375,7 +375,7 @@
               <div class="col-lg-6">
                 <div class="news-card">
                   <div class="row">
-                    <div class="col-sm-6">
+                    <div class="col-sm-6 order-2 order-md-1">
                       <div class="text">
                         <p class="mini-title">Blogs</p>
                         <div class="head-wrap">
@@ -392,7 +392,7 @@
                         <a href="#">Read More <img src="assets/images/a-y.png" alt="s"></a>
                       </div>
                     </div>
-                    <div class="col-sm-6">
+                    <div class="col-sm-6 order-1 order-md-2">
                       <div class="image text-center">
                         <img src="assets/images/media/n8.png" alt="ima" class="img-fluid nmdesia">
                       </div>
@@ -408,7 +408,7 @@
           <div class="container csm">
             <div class="news-card">
               <div class="row g-3 gx-xl-5">
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg-4 col-md-6 order-2 order-md-1">
                   <div class="text">
                     <p class="mini-title">News | Khaleej Times</p>
                     <div class="head-wrap" style="background: #fff;">
@@ -426,7 +426,7 @@
                     <a href="#">Read More <img src="assets/images/a-y.png" alt="s"></a>
                   </div>
                 </div>
-                <div class="col-lg-8 col-md-6">
+                <div class="col-lg-8 col-md-6 order-1 order-md-2">
                   <div class="image text-center">
                     <img src="assets/images/media/n9.png" alt="ima" class="img-fluid nmdesia">
                   </div>

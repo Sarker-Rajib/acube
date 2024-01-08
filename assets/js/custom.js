@@ -26,10 +26,15 @@ var swiper = new Swiper(".featureSlider", {
 });
 
 var swiper = new Swiper(".amenities", {
-    autoplay: true,
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
     breakpoints: {
         375: {
             slidesPerView: 1,
+            spaceBetween:5,
+            loop:true
         },
         768: {
             slidesPerView: 2,
@@ -74,3 +79,10 @@ var swiper = new Swiper(".teamMember", {
         prevEl: ".swiper-button-prev",
     },
 });
+
+document.getElementById('trigger').addEventListener('click', () => {
+    document.getElementById('mainNav').classList.remove('hide')
+})
+document.getElementById('closer').addEventListener('click', () => {
+    document.getElementById('mainNav').classList.add('hide')
+})

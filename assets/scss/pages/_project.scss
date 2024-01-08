@@ -81,6 +81,18 @@
             }
         }
     }
+
+    .swiper {
+        @media(max-width: 767px) {
+            padding-inline: 35px;
+        }
+
+        padding-bottom: 30px;
+
+        // .swiper-button-next {}
+
+        // .swiper-button-prev {}
+    }
 }
 
 .Gallery {

@@ -100,12 +100,79 @@ body {
 
 /*===// end of base css === */
 /*=== layouts css start === */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 998;
+}
+.header .navbar .navbar-brand {
+  max-width: 130px;
+}
+@media (max-width: 1199px) {
+  .header .navbar .navbar-nav {
+    background: #000;
+    padding: 5px;
+  }
+}
+@media (max-width: 767px) {
+  .header .navbar .navbar-nav {
+    overflow-y: scroll;
+  }
+}
+@media (min-width: 1200px) {
+  .header .navbar .navbar-collapse {
+    padding: 20px 0;
+  }
+}
+.header .navbar .collapse-res-nav {
+  transition: all 0.3s;
+}
+@media (max-width: 1199px) {
+  .header .navbar .collapse-res-nav {
+    transition: all 0.3s;
+    left: 0;
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    background: #000;
+    width: 320px;
+    z-index: 999;
+    padding: 35px 20px 20px;
+  }
+  .header .navbar .collapse-res-nav.hide {
+    transition: all 0.3s;
+    left: -320px;
+    overflow: hidden;
+  }
+}
+.header .navbar .nav-item .nav-link {
+  font-size: 12px;
+  font-weight: 200;
+  color: #ffffff;
+}
+.header .navbar .nav-item .dropdown-toggle::after {
+  border: solid #ffffff;
+  border-width: 0 1px 1px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+.header .navbar .lg-logo {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .side-nav {
   position: fixed;
   right: 0;
   top: 50%;
   transform: translateY(-50%);
-  z-index: 999;
+  z-index: 991;
   background: #ffffff;
   border-radius: 10px;
 }
@@ -138,52 +205,6 @@ body {
 }
 .side-nav img:hover {
   transform: scale(1.05);
-}
-
-.header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 999;
-}
-.header .navbar .navbar-brand {
-  max-width: 130px;
-}
-@media (max-width: 1199px) {
-  .header .navbar .navbar-nav {
-    background: #000;
-    padding: 5px;
-  }
-}
-@media (max-width: 767px) {
-  .header .navbar .navbar-nav {
-    overflow-y: scroll;
-  }
-}
-@media (min-width: 1200px) {
-  .header .navbar .navbar-collapse {
-    padding: 20px 0;
-  }
-}
-.header .navbar .nav-item .nav-link {
-  font-size: 12px;
-  font-weight: 200;
-  color: #ffffff;
-}
-.header .navbar .nav-item .dropdown-toggle::after {
-  border: solid #ffffff;
-  border-width: 0 1px 1px 0;
-  display: inline-block;
-  padding: 3px;
-  transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
-}
-.header .navbar .lg-logo {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
 }
 
 .footer {
@@ -648,6 +669,14 @@ body {
 }
 .amenities .w-card:hover .bigone {
   transform: scale(1.06);
+}
+.amenities .swiper {
+  padding-bottom: 30px;
+}
+@media (max-width: 767px) {
+  .amenities .swiper {
+    padding-inline: 35px;
+  }
 }
 
 .Gallery {
