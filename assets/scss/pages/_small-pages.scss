@@ -80,6 +80,7 @@
 
                     &:not(.collapsed) {
                         background: #bbbbbb1f;
+                        color: #000;
                     }
 
                     @media(max-width:767px) {
@@ -268,6 +269,7 @@
 
                     &:not(.collapsed) {
                         background: #bbbbbb1f;
+                        color: #000;
 
                         &::after {
                             transition: none;

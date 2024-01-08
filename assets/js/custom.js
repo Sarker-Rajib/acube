@@ -25,6 +25,26 @@ var swiper = new Swiper(".featureSlider", {
     },
 });
 
+var swiper = new Swiper(".virTout", {
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+        375: {
+            slidesPerView: 1,
+            spaceBetween: 5,
+            loop: true
+        },
+        768: {
+            slidesPerView: 2,
+        },
+        992: {
+            slidesPerView: 3,
+        },
+    },
+});
+
 var swiper = new Swiper(".amenities", {
     navigation: {
         nextEl: ".swiper-button-next",
@@ -33,13 +53,13 @@ var swiper = new Swiper(".amenities", {
     breakpoints: {
         375: {
             slidesPerView: 1,
-            spaceBetween:5,
-            loop:true
+            spaceBetween: 5,
+            loop: true
         },
         768: {
             slidesPerView: 2,
         },
-        991: {
+        992: {
             slidesPerView: 3,
         },
         1200: {

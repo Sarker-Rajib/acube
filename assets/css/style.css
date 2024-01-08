@@ -147,6 +147,9 @@ body {
     overflow: hidden;
   }
 }
+.header .navbar .collapse-res-nav .dropdown .dropdown-item {
+  font-size: 14px;
+}
 .header .navbar .nav-item .nav-link {
   font-size: 12px;
   font-weight: 200;
@@ -174,20 +177,30 @@ body {
   transform: translateY(-50%);
   z-index: 991;
   background: #ffffff;
-  border-radius: 10px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
 }
 .side-nav .wrap {
-  padding: 20px;
+  padding: 12px;
 }
-.side-nav .wrap .ttx {
-  right: calc(100% + 10px);
-  top: 10px;
+.side-nav .wrap ul li {
+  position: relative;
+}
+.side-nav .wrap ul li a {
+  display: inline-block;
+}
+.side-nav .wrap ul li .ttip {
+  position: absolute;
+  right: calc(100% + 20px);
+  top: 0px;
   background: #000;
   color: #fff;
   padding: 5px 20px;
   border-radius: 5px;
+  white-space: nowrap;
+  display: none;
 }
-.side-nav .wrap .ttx::after {
+.side-nav .wrap ul li .ttip::after {
   content: "";
   position: absolute;
   right: -6px;
@@ -196,6 +209,9 @@ body {
   height: 15px;
   width: 15px;
   background: #000;
+}
+.side-nav .wrap ul li:hover .ttip {
+  display: block;
 }
 .side-nav li:not(:last-child) {
   padding-bottom: 20px;
@@ -251,10 +267,24 @@ body {
 }
 
 .offplan-btn {
-  transition: all 0.2s;
+  background: #000;
+  color: #fff;
+  border: 0;
+  display: inline-block;
+  padding: 7px 15px;
+}
+.offplan-btn .yellow {
+  display: none;
 }
 .offplan-btn:hover {
-  transform: scale(1.05);
+  color: #d8b72b;
+  background: url(../images/project/111.png);
+}
+.offplan-btn:hover .yellow {
+  display: inline-block;
+}
+.offplan-btn:hover .white {
+  display: none;
 }
 
 .banner {
@@ -757,11 +787,22 @@ body {
   }
 }
 
-.projects .p-card .more-a {
-  visibility: hidden;
+.projects .p-card .im-wrapp {
+  overflow: hidden;
+}
+.projects .p-card .im-wrapp img {
+  transition: all 0.3s;
+}
+@media (min-width: 1200px) {
+  .projects .p-card .more-a {
+    visibility: hidden;
+  }
 }
 .projects .p-card:hover {
   background: #f6f5f5;
+}
+.projects .p-card:hover .im-wrapp img {
+  transform: scale(1.05);
 }
 .projects .p-card:hover .more-a {
   visibility: visible;
@@ -841,6 +882,7 @@ body {
 }
 .faqs .accordion .accordion-item .accordion-header .accordion-button:not(.collapsed) {
   background: rgba(187, 187, 187, 0.1215686275);
+  color: #000;
 }
 @media (max-width: 767px) {
   .faqs .accordion .accordion-item .accordion-header .accordion-button {
@@ -999,6 +1041,7 @@ body {
 }
 .career-posts .accordion .accordion-item .accordion-header .accordion-button:not(.collapsed) {
   background: rgba(187, 187, 187, 0.1215686275);
+  color: #000;
 }
 .career-posts .accordion .accordion-item .accordion-header .accordion-button:not(.collapsed)::after {
   transition: none;

@@ -47,6 +47,12 @@
                     overflow: hidden;
                 }
             }
+
+            .dropdown {
+                .dropdown-item {
+                    font-size: 14px;
+                }
+            }
         }
 
         .nav-item {
@@ -78,7 +84,6 @@
 }
 
 
-
 .side-nav {
     position: fixed;
     right: 0;
@@ -86,29 +91,51 @@
     transform: translateY(-50%);
     z-index: 991;
     background: #ffffff;
-    border-radius: 10px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
 
     .wrap {
-        padding: 20px;
+        padding: 12px;
 
-        .ttx {
-            right: calc(100% + 10px);
-            top: 10px;
-            background: #000;
-            color: #fff;
-            padding: 5px 20px;
-            border-radius: 5px;
+        ul {
+            li {
+                position: relative;
 
-            &::after {
-                content: '';
-                position: absolute;
-                right: -6px;
-                top: 50%;
-                transform: translateY(-50%) rotate(45deg);
-                height: 15px;
-                width: 15px;
-                background: #000;
+                a {
+                    display: inline-block;
+                }
+
+
+                .ttip {
+                    position: absolute;
+                    right: calc(100% + 20px);
+                    top: 0px;
+                    background: #000;
+                    color: #fff;
+                    padding: 5px 20px;
+                    border-radius: 5px;
+                    white-space: nowrap;
+                    display: none;
+
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        right: -6px;
+                        top: 50%;
+                        transform: translateY(-50%) rotate(45deg);
+                        height: 15px;
+                        width: 15px;
+                        background: #000;
+                    }
+                }
+
+                &:hover {
+                    .ttip {
+                        display: block;
+                    }
+                }
             }
+
         }
     }
 
@@ -123,5 +150,4 @@
             transform: scale(1.05);
         }
     }
-
 }
