@@ -121,6 +121,12 @@ body {
     overflow-y: scroll;
   }
 }
+.header .navbar .navbar-toggler {
+  border: none;
+}
+.header .navbar .navbar-toggler:focus {
+  box-shadow: none;
+}
 @media (min-width: 1200px) {
   .header .navbar .navbar-collapse {
     padding: 20px 0;
@@ -149,6 +155,9 @@ body {
 }
 .header .navbar .collapse-res-nav .dropdown .dropdown-item {
   font-size: 14px;
+}
+.header .navbar .collapse-res-nav .dropdown .dropdown-item:hover {
+  background: #d4af37;
 }
 .header .navbar .nav-item .nav-link {
   font-size: 12px;
@@ -223,6 +232,10 @@ body {
   transform: scale(1.05);
 }
 
+#closer {
+  cursor: pointer;
+}
+
 .footer {
   background: #f9f9f9;
   padding: 65px 0 35px;
@@ -260,10 +273,10 @@ body {
   padding: 10px 15px;
   font-weight: 200;
   font-size: 12px;
+  border: 1px solid #000000;
 }
 .btn-expo:hover {
   background: #000;
-  border: 1px solid #fff;
 }
 
 .offplan-btn {
@@ -331,9 +344,6 @@ body {
 .banner .bottom-part .book {
   font-size: 12px;
   font-weight: 200;
-}
-.banner .bottom-part .book:hover {
-  border: 1px solid #fff;
 }
 @media (max-width: 767px) {
   .banner .bottom-part {

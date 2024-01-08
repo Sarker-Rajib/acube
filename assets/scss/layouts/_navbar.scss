@@ -21,6 +21,14 @@
             }
         }
 
+        .navbar-toggler {
+            border: none;
+
+            &:focus {
+                box-shadow: none;
+            }
+        }
+
         .navbar-collapse {
             @media(min-width: 1200px) {
                 padding: 20px 0;
@@ -51,6 +59,10 @@
             .dropdown {
                 .dropdown-item {
                     font-size: 14px;
+
+                    &:hover {
+                        background: #d4af37;
+                    }
                 }
             }
         }
@@ -150,4 +162,8 @@
             transform: scale(1.05);
         }
     }
+}
+
+#closer {
+    cursor: pointer;
 }

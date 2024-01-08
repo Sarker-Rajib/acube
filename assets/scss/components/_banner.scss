@@ -50,10 +50,6 @@
         .book {
             font-size: 12px;
             font-weight: 200;
-
-            &:hover {
-                border: 1px solid #fff;
-            }
         }
 
         @media(max-width:767px) {

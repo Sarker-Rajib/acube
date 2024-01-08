@@ -26,12 +26,11 @@
           <img src="assets/images/SVGs/logo_WHITE.svg" alt="logo" class="img-fluid">
         </a>
 
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
-          aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <button id="trigger" class="navbar-toggler p-2 py-1" type="button">
           <img width="45" src="assets/images/SVGs/menu.svg" alt="menu">
         </button>
 
-        <div class="collapse navbar-collapse" id="mainNav">
+        <div class="navbar-collapse hide collapse-res-nav" id="mainNav">
           <ul
             class="navbar-nav position-relative align-items-xl-center flex-grow-1 mb-2 mb-lg-0 justify-content-between d-lg-flex">
             <li>
@@ -41,13 +40,9 @@
                     aria-expanded="false">
                     ABOUT US
                   </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                    <li>
-                      <hr class="dropdown-divider">
-                    </li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  <ul class="dropdown-menu bg-black p-1 rounded-0">
+                    <li><a class="text-white dropdown-item" href="#">Action</a></li>
+                    <li><a class="text-white dropdown-item" href="#">Another action</a></li>
                   </ul>
                 </li>
                 <li class="nav-item dropdown me-3">
@@ -55,13 +50,9 @@
                     aria-expanded="false">
                     OUR PROJECTS
                   </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                    <li>
-                      <hr class="dropdown-divider">
-                    </li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  <ul class="dropdown-menu bg-black p-1 rounded-0">
+                    <li><a class="text-white dropdown-item" href="#">Action 3</a></li>
+                    <li><a class="text-white dropdown-item" href="#">Another 4 action</a></li>
                   </ul>
                 </li>
                 <li class="nav-item dropdown">
@@ -69,13 +60,9 @@
                     aria-expanded="false">
                     MEDIA CENTER
                   </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                    <li>
-                      <hr class="dropdown-divider">
-                    </li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  <ul class="dropdown-menu bg-black p-1 rounded-0">
+                    <li><a class="text-white dropdown-item" href="#">5 Action</a></li>
+                    <li><a class="text-white dropdown-item" href="#">6 Another action</a></li>
                   </ul>
                 </li>
               </ul>
@@ -94,13 +81,9 @@
                     aria-expanded="false">
                     CONSTRUCTION UPDATES
                   </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                    <li>
-                      <hr class="dropdown-divider">
-                    </li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  <ul class="dropdown-menu bg-black p-1 rounded-0">
+                    <li><a class="text-white dropdown-item" href="#">7 Action</a></li>
+                    <li><a class="text-white dropdown-item" href="#">8 8Another action</a></li>
                   </ul>
                 </li>
                 <li class="nav-item dropdown ms-xl-3 mb-1 mb-xl-0">
@@ -117,6 +100,7 @@
               </ul>
             </li>
           </ul>
+          <span id="closer" class="text-white position-absolute top-0 end-0 px-3 py-2 d-xl-none">X</span>
         </div>
       </nav>
     </div>
