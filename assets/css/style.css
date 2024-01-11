@@ -646,10 +646,31 @@ body {
 }
 
 .offplan {
-  padding: 80px 0;
+  padding-top: 80px;
+  margin-bottom: 50px;
+  overflow: hidden;
+}
+.offplan .wrap {
+  position: relative;
+  z-index: 5;
+}
+.offplan .wrap::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 150px;
+  width: 120%;
+  height: 72%;
+  background: #f9f9f9;
+  z-index: 1;
+}
+.offplan .btms {
+  position: relative;
+  z-index: 4;
 }
 .offplan .top {
-  text-align: center;
+  position: relative;
+  z-index: 5;
 }
 .offplan .top h2 {
   font-size: 100px;
@@ -665,9 +686,16 @@ body {
   padding: 2px 20px;
 }
 .offplan .top .location1 {
-  margin-left: 15px;
   font-size: 14px;
   font-weight: 300;
+}
+.offplan .top .para-wrap {
+  padding: 40px;
+}
+@media (max-width: 767px) {
+  .offplan .top .para-wrap {
+    padding: 5px;
+  }
 }
 .offplan p {
   font-size: 20px;
@@ -675,7 +703,8 @@ body {
 }
 @media (max-width: 767px) {
   .offplan {
-    padding: 50px 0;
+    padding-top: 50px;
+    margin-bottom: 50px;
   }
   .offplan .top h2 {
     font-size: 60px;
