@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*=== abstracts css start === */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
 /*===// end of abstracts css === */
@@ -185,7 +186,7 @@ body {
   top: 50%;
   transform: translateY(-50%);
   z-index: 991;
-  background: #ffffff;
+  background: rgba(0, 0, 0, 0.6117647059);
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
 }
@@ -208,6 +209,7 @@ body {
   border-radius: 5px;
   white-space: nowrap;
   display: none;
+  font-size: 14px;
 }
 .side-nav .wrap ul li .ttip::after {
   content: "";
@@ -224,12 +226,6 @@ body {
 }
 .side-nav li:not(:last-child) {
   padding-bottom: 20px;
-}
-.side-nav img {
-  transition: all 0.1s;
-}
-.side-nav img:hover {
-  transform: scale(1.05);
 }
 
 #closer {
@@ -280,24 +276,24 @@ body {
 }
 
 .offplan-btn {
-  background: #000;
-  color: #fff;
   border: 0;
   display: inline-block;
   padding: 7px 15px;
-}
-.offplan-btn .yellow {
-  display: none;
-}
-.offplan-btn:hover {
   color: #d8b72b;
   background: url(../images/project/111.png);
 }
+.offplan-btn .white {
+  display: none;
+}
+.offplan-btn:hover {
+  background: #000;
+  color: #fff;
+}
 .offplan-btn:hover .yellow {
-  display: inline-block;
+  display: none;
 }
 .offplan-btn:hover .white {
-  display: none;
+  display: inline-block;
 }
 
 .banner {
@@ -645,9 +641,115 @@ body {
   z-index: 99;
 }
 
+.feedback {
+  padding: 80px 0;
+}
+@media (max-width: 767px) {
+  .feedback {
+    padding: 60px 0 40px;
+  }
+}
+.feedback .com {
+  position: relative;
+}
+.feedback .com::after {
+  font-family: "Times New Roman", Times, serif;
+  position: absolute;
+  content: "“";
+  left: -30px;
+  font-size: 60px;
+  line-height: 0.9;
+  z-index: 8;
+  top: 0;
+}
+@media (max-width: 767px) {
+  .feedback .com::after {
+    font-size: 25px;
+    left: -10px;
+  }
+}
+.feedback .sec-header {
+  position: relative;
+  overflow: hidden;
+}
+.feedback .sec-header p {
+  font-size: 26px;
+  font-weight: 300;
+  text-transform: uppercase;
+  position: relative;
+  z-index: 5;
+  display: inline-block;
+  padding-right: 10px;
+}
+@media (max-width: 991px) {
+  .feedback .sec-header p {
+    font-size: 22px;
+  }
+}
+.feedback .sec-header::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 2px;
+  background: #000;
+  left: 180px;
+  top: 50%;
+  z-index: 1;
+}
+@media (max-width: 991px) {
+  .feedback .sec-header::after {
+    left: 150px;
+  }
+}
+.feedback h2 {
+  font-family: "Italiana", sans-serif;
+  font-size: 65px;
+}
+@media (max-width: 991px) {
+  .feedback h2 {
+    font-size: 50px;
+  }
+}
+.feedback .testimonial .swiper-slide .parag {
+  min-width: none;
+  min-height: 140px;
+  background: rgb(249, 249, 249);
+  padding: 15px;
+}
+.feedback .testimonial .swiper-slide .parag p {
+  color: #828282;
+  font-size: 18px;
+}
+.feedback .testimonial .swiper-slide .name {
+  margin-top: 10px;
+  padding-right: 50px;
+  color: #000000;
+  font-size: 18px;
+}
+.feedback .testimonial .swiper-button-next {
+  top: calc(100% - 40px);
+  right: calc(100% - 110px);
+}
+.feedback .testimonial .swiper-button-next::after {
+  display: none;
+}
+.feedback .testimonial .swiper-button-prev {
+  top: calc(100% - 40px);
+  left: 0px;
+}
+.feedback .testimonial .swiper-button-prev::after {
+  display: none;
+}
+.feedback .testimonial .swiper-pagination {
+  top: calc(100% - 52px);
+}
+.feedback .testimonial .swiper-pagination.swiper-pagination-fraction {
+  width: auto;
+  left: 40px;
+}
+
 .offplan {
-  padding-top: 80px;
-  margin-bottom: 50px;
+  padding: 80px 0;
   overflow: hidden;
 }
 .offplan .wrap {
@@ -703,8 +805,7 @@ body {
 }
 @media (max-width: 767px) {
   .offplan {
-    padding-top: 50px;
-    margin-bottom: 50px;
+    padding: 50px 0;
   }
   .offplan .top h2 {
     font-size: 60px;
@@ -1137,7 +1238,19 @@ body {
 
 .all-news .first-section {
   padding: 65px 0 50px;
+}
+.all-news .first-section .nc-wrapper {
+  display: grid;
+  gap: 30px;
+}
+@media (min-width: 992px) {
+  .all-news .first-section .nc-wrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.all-news .first-section .nc-wrapper .news-card {
   background: #f9f9f9;
+  padding: 40px;
 }
 .all-news .first-section .news-card .text {
   padding-top: 20px;

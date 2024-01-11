@@ -80,14 +80,29 @@ var swiper = new Swiper(".mySwiper", {
     },
 });
 
+var swiper = new Swiper(".testimonial", {
+    slidesPerView: 1,
+    pagination: {
+        el: ".swiper-pagination",
+        type: "fraction",
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+});
+
 var swiper = new Swiper(".teamMember", {
     spaceBetween: 0,
     breakpoints: {
         420: {
             slidesPerView: 2,
         },
-        1200: {
+        768: {
             slidesPerView: 3,
+        },
+        1200: {
+            slidesPerView: 4,
         },
     },
     pagination: {

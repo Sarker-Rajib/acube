@@ -12,26 +12,26 @@
 }
 
 .offplan-btn {
-    background: #000;
-    color: #fff;
     border: 0;
     display: inline-block;
     padding: 7px 15px;
+    color: #d8b72b;
+    background: url(../images/project/111.png);
 
-    .yellow {
+    .white {
         display: none;
     }
 
     &:hover {
-        color: #d8b72b;
-        background: url(../images/project/111.png);
+        background: #000;
+        color: #fff;
 
         .yellow {
-            display: inline-block;
+            display: none;
         }
 
         .white {
-            display: none;
+            display: inline-block;
         }
     }
 }

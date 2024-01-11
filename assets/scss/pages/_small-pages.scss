@@ -341,7 +341,20 @@
 .all-news {
     .first-section {
         padding: 65px 0 50px;
-        background: #f9f9f9;
+
+        .nc-wrapper {
+            display: grid;
+            gap: 30px;
+
+            @media(min-width: 992px) {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .news-card {
+                background: #f9f9f9;
+                padding: 40px;
+            }
+        }
 
         .news-card {
 
