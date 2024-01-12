@@ -1,0 +1,132 @@
+.timeline {
+    .container {
+        max-width: 1220px;
+    }
+
+    .nav-tabs {
+        border: none;
+
+        &.year-nav {
+            max-width: 640px;
+            margin: auto;
+            justify-content: space-between;
+            position: relative;
+            margin-bottom: 60px;
+
+            @media (max-width:767px) {
+                margin: 0 20px 60px;
+            }
+        }
+
+        &.month-nav {
+            max-width: 800px;
+            margin: auto;
+            justify-content: space-between;
+            position: relative;
+            margin-bottom: 60px;
+
+            .nav-link {
+                @media (max-width:767px) {
+                    font-size: 10px;
+                }
+            }
+        }
+
+        &::after {
+            position: absolute;
+            content: '';
+            height: 1px;
+            width: 100%;
+            background: #cccccc;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .nav-link {
+            padding: 0;
+            background: #ffffff;
+            border: 1px solid #cccccc;
+            color: #8f8f8f;
+            height: 15px;
+            width: 15px;
+            border-radius: 50%;
+            position: relative;
+            z-index: 9;
+            position: relative;
+
+            &.active {
+                background: #455561;
+                color: #455561;
+            }
+
+            span {
+                position: absolute;
+                left: 50%;
+                top: 100%;
+                transform: translateX(-50%);
+            }
+        }
+    }
+
+    .slider-wrapper-parent {
+        padding: 20px;
+        background: #f9f9f9;
+        display: grid;
+        grid-template-columns: 1fr 4fr;
+        gap: 20px;
+
+        .swiper {
+            width: 100%;
+            height: 500px;
+            margin-left: auto;
+            margin-right: auto;
+
+            @media (max-width:767px) {
+                height: 250px;
+            }
+        }
+
+        .swiper-slide {
+            background-size: cover;
+            background-position: center;
+        }
+
+        .mySwiper2 {
+            height: 80%;
+            width: 100%;
+        }
+
+        .mySwiper {
+            height: 20%;
+            box-sizing: border-box;
+            padding: 10px 0;
+        }
+
+        .mySwiper .swiper-slide {
+            width: 25%;
+            height: 100%;
+            opacity: 0.4;
+        }
+
+        .mySwiper .swiper-slide-thumb-active {
+            opacity: 1;
+        }
+
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .swiper-button-prev,
+        .swiper-button-next {
+            &::after {
+                font-size: 20px;
+                font-weight: 700;
+            }
+        }
+
+    }
+}
